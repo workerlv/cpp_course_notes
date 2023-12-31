@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			// "label": "C/C++: g++-13 build active file",
+			"label": "Build with GCC",
+			"command": "/opt/homebrew/bin/g++-13",
+			// "args": [
+			// 	"-fdiagnostics-color=always",
+			// 	"-g",
+			// 	"${file}",
+			// 	"-o",
+			// 	"${fileDirname}/${fileBasenameNoExtension}"
+			// ],
+			"args": [
+				"-g",
+				"-std=c++20",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"${workspaceFolder}/rooster"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /opt/homebrew/bin/g++-13"
+		}
+	]
+}
