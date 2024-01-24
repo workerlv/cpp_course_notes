@@ -3,15 +3,15 @@
 
 int main() {
 
-std::cout << "Please enter degrees in celsius : " << std::endl;
+    std::cout << "Please enter degrees in celsius : " << std::endl;
 
-float degrees_celsius;
-std::cin >> degrees_celsius;
+    float degrees_celsius;
+    std::cin >> degrees_celsius;
 
-float fahrenheit = (9.0 / 5) * degrees_celsius + 32;
+    float fahrenheit = (9.0 / 5) * degrees_celsius + 32;
 
-std::cout << degrees_celsius << " Celsius is  "<< fahrenheit <<" Fahrenheit" << std::endl;
+    std::cout << degrees_celsius << " Celsius is  "<< fahrenheit <<" Fahrenheit" << std::endl;
 
-return 0;
+    return 0;
 
 }
